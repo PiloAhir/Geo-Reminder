@@ -1,0 +1,49 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootScroll" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fillViewport="true" android:background="#F4F7F8" android:clipToPadding="false">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="18dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Geo Reminder" android:textColor="#075E68" android:textSize="26sp" android:textStyle="bold"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="જ્યાં પહોંચો ત્યાં યાદ અપાવે" android:textColor="#52666B" android:textSize="14sp"
+            android:layout_marginBottom="16dp"/>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="16dp"
+            app:cardElevation="2dp" xmlns:app="http://schemas.android.com/apk/res-auto">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="16dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="નવું લોકેશન રિમાઇન્ડર" android:textSize="18sp" android:textStyle="bold" android:textColor="#17383D"/>
+                <EditText android:id="@+id/titleInput" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:hint="રિમાઇન્ડરનું નામ" android:singleLine="true"/>
+                <EditText android:id="@+id/messageInput" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:hint="શું યાદ રાખવું છે?" android:minLines="2" android:gravity="top"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="લોકેશન" android:textStyle="bold" android:textColor="#35565B" android:layout_marginTop="8dp"/>
+                <EditText android:id="@+id/latInput" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:hint="અક્ષાંશ (Latitude)" android:inputType="numberDecimal|numberSigned" android:singleLine="true"/>
+                <EditText android:id="@+id/lonInput" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:hint="રેખાંશ (Longitude)" android:inputType="numberDecimal|numberSigned" android:singleLine="true"/>
+                <Button android:id="@+id/currentLocationButton" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="હાલનું લોકેશન મેળવો"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="રેડિયસ (મીટર)" android:textColor="#35565B" android:textStyle="bold"/>
+                <EditText android:id="@+id/radiusInput" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:hint="150" android:text="150" android:inputType="number" android:singleLine="true"/>
+                <Button android:id="@+id/saveButton" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="રિમાઇન્ડર સાચવો" android:textAllCaps="false"/>
+                <Button android:id="@+id/backgroundPermissionButton" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="બેકગ્રાઉન્ડ લોકેશન પરવાનગી આપો" android:textAllCaps="false"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="તમારા રિમાઇન્ડર્સ" android:textSize="19sp" android:textStyle="bold"
+            android:textColor="#17383D" android:layout_marginTop="20dp" android:layout_marginBottom="8dp"/>
+        <LinearLayout android:id="@+id/reminderList" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="vertical"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="નોંધ: લોકેશન રિમાઇન્ડર માટે Location ચાલુ રાખો અને એપને 'Allow all the time' પરવાનગી આપો. બેટરી સેવર અથવા ફોન ઉત્પાદકની પ્રતિબંધિત સેટિંગ્સથી વિલંબ થઈ શકે છે."
+            android:textColor="#60777B" android:textSize="12sp" android:layout_marginTop="16dp" android:layout_marginBottom="12dp"/>
+    </LinearLayout>
+</ScrollView>
