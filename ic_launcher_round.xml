@@ -1,4 +1,7 @@
-<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
-    <background android:drawable="@color/launcher_bg"/>
-    <foreground android:drawable="@drawable/ic_geo_foreground"/>
-</adaptive-icon>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp" android:height="48dp" android:viewportWidth="48" android:viewportHeight="48">
+    <path android:fillColor="#087F8C" android:pathData="M0,0h48v48h-48z"/>
+    <path android:fillColor="#FFFFFF" android:pathData="M24,5C15.7,5 9,11.7 9,20c0,10.8 15,23 15,23s15,-12.2 15,-23C39,11.7 32.3,5 24,5z"/>
+    <path android:fillColor="#087F8C" android:pathData="M24,13a7,7 0,1 0,0 14a7,7 0,1 0,0 -14"/>
+    <path android:fillColor="#F4A340" android:pathData="M22.5,15h3v6h-3zM22.5,22.5h3v3h-3z"/>
+</vector>
